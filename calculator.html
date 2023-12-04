@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calstyle.css">
+    <title>calculator</title>
+</head>
+<body>
+    <center>
+    <div class="main">
+         <div class="total">
+             <input type="text" class="display-box" id="result" style="width: 450px;height: 150px; font-size: 100px;">
+         </div>
+         <div class="buttons">
+               <input type="button" value="C" onclick="clearScreen()" id="btn" class="item item-grey"/>
+               <input type="button" value="+/-" onclick="display('+/-')" class="item item-grey"/>
+               <input type="button" value="%" id="ope" onclick="display('%')" class="item item-grey"/>
+               <input type="button" value="/" id="ope" onclick="display('/')" class="item item-orange"/>
+               <input type="button" value="7" id="num1" onclick="display('7')" class="item item-darkgrey"/>
+               <input type="button" value="8" id="num2" onclick="display('8')" class="item item-darkgrey"/>
+               <input type="button" value="9" id="num" onclick="display('9')" class="item item-darkgrey"/>
+               <input type="button" value="*" id="ope" onclick="display('*')" class="item item-orange"/>
+               <input type="button" value="4" id="num" onclick="display('4')" class="item item-darkgrey"/>
+               <input type="button" value="5" id="num" onclick="display('5')" class="item item-darkgrey"/>
+               <input type="button" value="6" id="num" onclick="display('6')" class="item item-darkgrey"/>
+               <input type="button" value="-" id="ope" onclick="display('-')" class="item item-orange"/>
+               <input type="button" value="1" id="num" onclick="display('1')" class="item item-darkgrey"/>
+               <input type="button" value="2" id="num" onclick="display('2')" class="item item-darkgrey"/>
+               <input type="button" value="3" id="num" onclick="display('3')" class="item item-darkgrey"/>
+               <input type="button" value="+" id="+" onclick="display('+')" class="item item-orange"/>
+               <input type="button" value="0" id="num" onclick="display('0')" class="item item-darkgrey"/>
+               <input type="button" value="." id="num" onclick="display('.')" class="item item-darkgrey "/>
+               <input type="button" value="=" onclick="calculate()" class="item item-orange " style="width: 240px; border-radius: 30px;"/>
+         </div>
+    </div>
+</center>
+</body>
+<script src="cal.js"></script>
+</html>
